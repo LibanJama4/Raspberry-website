@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Raspberry Nursery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Raspberry Nursery</h1>
+            </div>  
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+            <ul class="nav-links">
+                <li><a href="index.html" title="Go to Home Page">Home</a></li>
+                <li><a href="products.html" title="View Products">Products</a></li>
+                <li><a href="planting-guide.html" title="Planting Guide">Planting Guide</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+            </ul>
+            <a href="products.html" class="btn-shop" title="Shop Now">Shop Now</a>
+        </nav>   
+    </header>
+    <main>
+        <section id="contacts">
+            <h2>Get in Touch</h2>
+            <p>Have questions? We're here to help! Contact us using the form below.</p>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Raspberry Nursery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
